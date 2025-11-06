@@ -8,14 +8,14 @@ const links = [
 
 export default function Sidebar() {
   return (
-    <aside className="w-60 bg-gray-900 text-white flex flex-col p-4">
-      <h2 className="text-xl font-semibold mb-6">Menu</h2>
-      <nav className="flex flex-col gap-2">
+    <aside className="w-60 bg-gray-900 text-white flex flex-col p-6 h-full shadow-lg rounded-r-2xl">
+      <h2 className="text-2xl font-bold mb-8">Menu</h2>
+      <nav className="flex flex-col gap-3">
         {links.map(link => (
           <Link
             key={link.href}
             href={link.href}
-            className="hover:bg-gray-700 px-3 py-2 rounded"
+            className="px-4 py-2 rounded-lg hover:bg-gray-700 hover:text-white transition-colors font-medium"
           >
             {link.label}
           </Link>
