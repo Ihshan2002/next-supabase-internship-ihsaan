@@ -45,6 +45,14 @@ export default function LoginPage() {
         {loading ? 'Logging in...' : 'Login'}
       </button>
       {error && <p className="text-red-600 mt-2">{error}</p>}
+
+      {/* ✅ Signup link */}
+      <p className="text-sm mt-4 text-center">
+        Don't have an account?{' '}
+        <a href="/signup" className="text-blue-600 hover:underline">
+          Sign up
+        </a>
+      </p>
     </div>
   )
 }
